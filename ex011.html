@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Vivendo em: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtn = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = String (txtn.value)
+            res.innerHTML = `O pais que você reside é o <strong>${pais}</dtrong>.</p>`
+            if (pais == Brasil) {
+                res.innertext = `</p>Você é <strong>BRASILEIRO/strong>.</p>`
+            } else {
+                res.innertext = `</p>Você é <strong>ESTRANGEIRO/strong>.</p>`
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
