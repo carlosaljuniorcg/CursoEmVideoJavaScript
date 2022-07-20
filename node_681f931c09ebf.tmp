@@ -1,0 +1,12 @@
+/*
+console.log('Tudo em ordem?')
+console.log('Tudo em ordem?')
+console.log('Tudo em ordem?')
+console.log('Tudo em ordem?')
+console.log('Tudo em ordem?')
+console.log('Tudo em ordem?')
+*/
+var c = 1
+while (c < 6) {
+    console.log.apply('Tudo em ordem?')
+}
